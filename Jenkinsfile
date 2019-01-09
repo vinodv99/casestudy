@@ -10,7 +10,7 @@ node {
     stage('Build the docker image') 
 	{
 
-        app = docker.build("vinuv/dockerimg")
+        app = docker.build("casestudy")
     }
 
     stage('Push the docker image') 
