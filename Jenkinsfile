@@ -24,7 +24,7 @@ node {
 	
 	stage('Run the docker image') 
 	{
-        docker.withRegistry('https://registry.hub.docker.com', 'docker-hub')  
+        docker.withServer('https://registry.hub.docker.com', 'docker-hub')  
 		{
 			docker.image('vinuv/casestudy').withRun('-p 80:3000') 
 			{
