@@ -5,14 +5,14 @@ Created with *create-react-app*. See the [full create-react-app guide](https://g
 
 
 
-Install
+Build and deploy process
 ---
 
-`npm install`
+This project is build from Jenkins CI/CD and the image is pushed to Docker Hub and then executed locally on the server.
 
 
 
-Usage
+Improvements
 ---
 
-`npm start`
+Create a Task in AWS ECS cluster and run the image as part of a service from the container.
