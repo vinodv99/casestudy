@@ -22,7 +22,7 @@ node {
 	
     stage('Run the docker image') 
     {
-	sh "docker kill $(docker ps -q)"
+	sh "docker kill \$(docker ps -q)"
         sh "docker run -d -p 80:3000 vinuv/casestudy:${env.BUILD_NUMBER}"
     }
 }
